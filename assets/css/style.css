@@ -73,11 +73,14 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding:0 0 20px 0;
+  line-height: 30px;
 }
 
 /* NavbarTop */
@@ -99,7 +102,7 @@ p {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #navtop .nav a {
@@ -131,9 +134,8 @@ p {
 /*******************
 *      MAIN        *
 ********************/
+
 /* portfolio */
-
-
 .grid{
   margin-top: 3rem;
 }
@@ -173,9 +175,16 @@ p {
   opacity: 1;
   overflow: hidden;
 }
+/* portfolio */
+
 /* .about.green main */
 
 /* ---.btn--- */
+
+/* #about p{
+  padding: 0 10px;
+  text-align: justify;
+} */
 .about .box-btn {
   padding: 30px;
 }
@@ -276,20 +285,19 @@ p {
 ********************/
 
 /* .infobox-center */
-footer h3,
-p {
+footer h3 {
   padding-bottom: 20px;
   line-height: 30px;
 }
 
 footer .infobox-center a {
-  height: 55px;
-  width: 55px;
-  font-size: 25px;
-  line-height: 55px;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
   color: white;
   border: 2px solid white;
-  border-radius: 50%;
+  border-radius: 100%;
   display: inline-block;
   transition: color .3s, background-color .3s;
 }
@@ -329,3 +337,97 @@ footer .copy span {
 /*******************
 *      FOOTER       *
 ********************/
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:1200px){
+  /*******************
+*      FOOTER       *
+********************/
+}
+
+@media screen and (max-width:992px) {
+
+  /* HEADER */
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+
+  .navbar-default .navbar-toggle:hover {
+    background-color: #1abc9c;
+  }
+
+  #navtop:hover {
+    transform: scale(1)
+  }
+
+/*******************
+*      MAIN       *
+********************/
+
+
+  /* /.about.green main */
+
+  #about p{
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: 500;
+  } 
+  /* /.about.green main */
+
+/*******************
+*      MAIN       *
+********************/
+
+/*******************
+*      FOOTER       *
+********************/
+  footer .infobox-center a {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+
+  footer h3,
+  footer p {
+    padding-bottom: 10px;
+    line-height: 20px;
+  }
+  footer h3 {
+    font-size: 1.25em ;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+/*******************
+*      FOOTER       *
+********************/
+
+}
+
+@media screen and (max-width:768px) {
+
+/*******************
+*      MAIN       *
+********************/
+  /* portfolio */
+
+  .portfolio img {
+    max-width: 80%;
+  }
+  /* portfolio */
+
+  /* /.about.green main */
+  #about p{
+    text-align: justify;
+    padding: 0 70px;
+    font-size: 2rem;
+    font-weight: 500;
+  } 
+  /* /.about.green main */
+/*******************
+*      MAIN       *
+********************/
+
+}
