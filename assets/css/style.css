@@ -22,10 +22,6 @@
   color: #2c3e50;
 }
 
-.opac-07 {
-  opacity: 0.7;
-}
-
 .icon-line {
   width: 250px;
   max-width: 100%;
@@ -90,6 +86,10 @@ p {
   border-color: transparent;
 }
 
+#navtop:hover {
+  transform: scale(1.1)
+}
+
 #navtop a{
   color: #ffffff;
   font-weight: 700;
@@ -133,10 +133,9 @@ p {
 ********************/
 /* portfolio */
 
-/* implementando la classe well nell'html a prortfolio ed hai box-img  */
 
 .grid{
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .portfolio .box-img {
   margin-bottom: 30px;
@@ -266,3 +265,66 @@ p {
 
 /* ---submit button--- */
 /* ---section contact-me--- */
+
+/*******************
+*      MAIN        *
+********************/
+
+/*******************
+*      FOOTER       *
+********************/
+
+/* .infobox-center */
+footer h3,
+p {
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+footer .infobox-center a {
+  height: 55px;
+  width: 55px;
+  font-size: 25px;
+  line-height: 55px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: color .3s, background-color .3s;
+}
+footer .infobox-center a:hover {
+  color: #2c3e50;
+  background-color: white;
+}
+
+/* /.infobox-center */
+
+
+/* infobox dx */
+footer .infobox-dx a,
+footer .copy a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+footer .infobox-dx a:hover,
+footer .copy a:hover {
+  opacity: .4;
+  text-decoration: underline;
+}
+
+/* -- #copy.copy-- */
+footer #copy {
+  padding: 3rem 0px;
+}
+
+footer .copy span {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* -- #copy.copy-- */
+
+/*******************
+*      FOOTER       *
+********************/
