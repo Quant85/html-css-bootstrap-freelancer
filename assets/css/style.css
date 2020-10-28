@@ -202,7 +202,8 @@ p {
 
 /* form contact */
 .contact form {
-  padding: 0px 100px;
+  padding: 0px calc(33.333% / 2);
+  margin: auto;
 }
 .register-form .form-group {
   margin-bottom: 0px;
